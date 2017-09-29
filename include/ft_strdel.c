@@ -1,6 +1,6 @@
-#include <stdlib.h>
+#include "libft.h"
 
-void ft_strdel(void **ap)
+void    ft_strdel(char **ap)
 {
     free(*ap);
     *ap = NULL;

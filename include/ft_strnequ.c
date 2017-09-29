@@ -1,4 +1,4 @@
-#include <stddef.h>
+#include "libft.h"
 
 int		ft_strnequ(char const *str1, char const *str2, size_t n)
 {

@@ -1,14 +1,8 @@
-#include <stddef.h>
-
-void    *ft_memalloc(size_t);
-char    *ft_strnew(size_t);
-void	*ft_strncpy(char *, const char *, size_t);
+#include "libft.h"
 
 char **ft_strspliter(char const *s, char c, int strlen, int subcount)
 {
     int i;
-    int start;
-    int count = strlen;
     char **list = ft_memalloc(sizeof(char **) * (subcount + 1));
 
     list[subcount] = (char *)('\0');
@@ -25,6 +19,7 @@ char **ft_strspliter(char const *s, char c, int strlen, int subcount)
     }
 
     return list;
+
 }
 
 char **ft_strsplit(char const *s, char c)

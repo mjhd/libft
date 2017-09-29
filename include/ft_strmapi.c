@@ -1,7 +1,4 @@
-#include <stddef.h>
-
-int		ft_strlen(char const *);
-char    *ft_strnew(size_t);
+#include "libft.h"
 
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
