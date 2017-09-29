@@ -1,21 +1,24 @@
 #include "libft.h"
 
 char 	*ft_strtrim(char const *s) {
+    int i;
     char *output;
-    int strlength;
-    int whitespace[2];
 
-    whitespace[0] = (s[0] == ' ' || s[0] == '\n' || s[0] == '\t') ? 1 : 0;
-    strlength = ft_strlen(s);
-    whitespace[1] = (s[strlength - whitespace[0]] == ' ' || s[strlength - whitespace[0]] == '\n' || s[strlength - whitespace[0]] == '\t') ? 1 : 0;
-    strlength = (strlength - whitespace[0] - whitespace[1]);
-    output = (char *)ft_memalloc(sizeof(char) * (strlength + 1));
-    whitespace[1] = whitespace[0];
-    while (whitespace[0] < strlength + whitespace[1])
+    output = s;
+    i = 0;
+    while ((*s == ' ' || *s == '\n' || *s == '\t') && *s++)
+        output++;
+    while(*s && *s++ && ++i);
+    s--;
+    while((*s == ' ' || *s == '\n' || *s == '\t') && i-- && *s--);
+    s = output;
+    output = (char *)memalloc(sizeof(char) * (i + 1));
+    while(*s && i--)
     {
-        output[whitespace[0] - whitespace[1]] = s[whitespace[0]];
-        whitespace[0]++;
+        (*output) = *s++;
+        output++;
     }
-    output[strlength] = '\0';
+    *output = '\0';
+
     return output;
 }
