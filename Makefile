@@ -7,7 +7,7 @@ OBJ = *.o
 all: $(NAME)
 
 $(NAME):
-	gcc -Wall -Werror -Wextra -c include/libft.h include/$(SRC)
+	gcc -Wall -Werror -Wextra -c -I include/libft.h include/$(SRC)
 	ar rcs $(NAME) $(OBJ)
 clean:
 	rm -f $(OBJ)
