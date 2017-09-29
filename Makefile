@@ -8,8 +8,7 @@ all: $(NAME)
 
 $(NAME):
 	gcc -Wall -Werror -Wextra -c include/libft.h include/$(SRC)
-	ar rc $(NAME) $(OBJ)
-	ranlib $(NAME)
+	ar rcs $(NAME) $(OBJ)
 clean:
 	rm -f $(OBJ)
 fclean: clean

@@ -1,5 +1,3 @@
-#include "libft.h"
-
 int ft_atoi(char *val)
 {
     int i;
