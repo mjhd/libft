@@ -1,6 +1,4 @@
-#include <stddef.h>
-
-void *ft_memalloc(size_t);
+#include "libft.h"
 
 char *ft_returnnum(int val, int length)
 {

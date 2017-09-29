@@ -1,4 +1,4 @@
-void	ft_putchar(char);
+#include "libft.h"
 
 void	ft_putstr(const char *str)
 {

@@ -1,4 +1,4 @@
-void ft_putchar(char);
+#include "libft.h"
 
 void ft_printnum(int val, int length)
 {

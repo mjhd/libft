@@ -9,6 +9,7 @@ int     ft_strlen_eq(char const *str1, char const *str2)
     while(str2[b++] != '\0');
     return (a == b) ? 1 : 0;
 }
+
 int		ft_strequ(char const *str1, char const *str2)
 {
     int i;
