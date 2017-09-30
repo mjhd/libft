@@ -1,12 +1,24 @@
-char    *ft_strcat(char *dest, const char *src)
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_atoi.c                                          :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: mhouser <marvin@42.fr>                     +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2017/09/29 11:59:54 by mhouser           #+#    #+#             */
+/*   Updated: 2017/09/29 12:00:00 by mhouser          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+char	*ft_strcat(char *dst, const char *src)
 {
-    int i;
+	int i;
 
-    i = -1;
-    while(dest[++i] != '\0');
-    while(*src != '\0')
-        dest[i++] = *src++;
-    dest[i] = '\0';
-
-    return dest;
+	i = 0;
+	while (dst[i] != '\0')
+		i++;
+	while (*src != '\0')
+		dst[i++] = *src++;
+	dst[i] = '\0';
+	return (dst);
 }

@@ -1,9 +1,21 @@
-int		ft_strlen(char const *str)
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_atoi.c                                          :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: mhouser <marvin@42.fr>                     +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2017/09/29 11:59:54 by mhouser           #+#    #+#             */
+/*   Updated: 2017/09/29 12:00:00 by mhouser          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+int	ft_strlen(char const *s)
 {
 	int length;
 
-	length = -1;
-	while(str[++length] != '\0');
-
-	return length;
+	length = 0;
+	while (s[length])
+		length++;
+	return (length);
 }

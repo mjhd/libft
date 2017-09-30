@@ -1,15 +1,26 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_atoi.c                                          :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: mhouser <marvin@42.fr>                     +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2017/09/29 11:59:54 by mhouser           #+#    #+#             */
+/*   Updated: 2017/09/29 12:00:00 by mhouser          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "libft.h"
 
-char    *ft_strrchr(const char *s, int c)
+char	*ft_strrchr(const char *s, int c)
 {
-    const char *pnt;
+	const char *pnt;
 
-    pnt = NULL;
-    while(s != '\0')
-    {
-        pnt = (*s == (char) c) ? s : pnt;
-        s++;
-    }
-
-    return (char *)pnt;
+	pnt = NULL;
+	while (s != '\0')
+	{
+		pnt = (*s == (char)c) ? s : pnt;
+		s++;
+	}
+	return (char *)pnt;
 }
