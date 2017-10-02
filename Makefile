@@ -14,3 +14,7 @@ clean:
 fclean: clean
 	rm -f $(NAME)
 re: fclean all
+.PHONY:
+	gcc -o output $(SRC) test/testcode.c
+	./output
+	rm -f output
