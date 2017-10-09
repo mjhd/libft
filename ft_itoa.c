@@ -12,7 +12,7 @@
 
 #include "libft.h"
 
-char	*ft_returnnum(int val, int length)
+static char	*ft_returnnum(int val, int length)
 {
 	int		len;
 	char	*output;
@@ -36,11 +36,11 @@ char	*ft_returnnum(int val, int length)
 	return (output);
 }
 
-char	*ft_itoa(int n)
+char		*ft_itoa(int n)
 {
-	int value;
-	int num;
-	int length;
+	int		value;
+	int		num;
+	int		length;
 
 	if (n == 0)
 		return (0);

@@ -10,10 +10,10 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_strlen_eq(char const *s1, char const *s2)
+static int	ft_strlen_eq(char const *s1, char const *s2)
 {
-	int a;
-	int b;
+	int 	a;
+	int 	b;
 
 	a = 0;
 	b = 0;
@@ -24,9 +24,9 @@ int	ft_strlen_eq(char const *s1, char const *s2)
 	return (a == b) ? 1 : 0;
 }
 
-int	ft_strequ(char const *s1, char const *s2)
+int			ft_strequ(char const *s1, char const *s2)
 {
-	int i;
+	int		i;
 
 	i = 0;
 	if (!ft_strlen_eq(s1, s2))

@@ -12,7 +12,7 @@
 
 #include "libft.h"
 
-void	ft_printnum_fd(int val, int length, int fd)
+static void	ft_printnum_fd(int val, int length, int fd)
 {
 	int		i;
 	int		output[length];
@@ -35,10 +35,10 @@ void	ft_printnum_fd(int val, int length, int fd)
 	}
 }
 
-void	ft_putnbr_fd(int val, int fd)
+void		ft_putnbr_fd(int val, int fd)
 {
-	int value;
-	int length;
+	int		value;
+	int		length;
 
 	value = (val) ? val : (val * -1);
 	length = 0;

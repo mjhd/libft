@@ -12,7 +12,7 @@
 
 #include "libft.h"
 
-char	**ft_strspliter(char const *s, char c, int strlen, int subcount)
+static char	**ft_strspliter(char const *s, char c, int strlen, int subcount)
 {
 	int		i;
 	char	**list;
@@ -33,7 +33,7 @@ char	**ft_strspliter(char const *s, char c, int strlen, int subcount)
 	return (list);
 }
 
-char	**ft_strsplit(char const *s, char c)
+char		**ft_strsplit(char const *s, char c)
 {
 	int		subcount;
 	int		strlen;
