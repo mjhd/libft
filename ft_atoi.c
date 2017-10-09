@@ -10,7 +10,19 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_atoi(char *n)
+#include "libft.h"
+
+void	*ft_memset(void *s, int c, size_t n)
 {
-	return (((*n) - '0'));
+	size_t	i;
+	char	*cpy;
+
+	i = 0;
+	cpy = s;
+	while (i < n)
+	{
+		cpy[i] = c;
+		i++;
+	}
+	return (cpy);
 }
