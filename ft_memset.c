@@ -12,14 +12,17 @@
 
 #include "libft.h"
 
-void	*ft_memset(void *dst, int c, size_t len)
+void	*ft_memset(void *s, int c, size_t n)
 {
-	unsigned char	*wrt_pnt;
-	int				i;
+	size_t	i;
+	char	*cpy;
 
-	wrt_pnt = dst;
 	i = 0;
-	while (i < (int)len)
-		wrt_pnt[i++] = (unsigned int)c;
-	return (dst);
+	cpy = s;
+	while (i < n)
+	{
+		cpy[i] = c;
+		i++;
+	}
+	return (cpy);
 }
