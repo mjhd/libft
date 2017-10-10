@@ -1,20 +1,4 @@
-NAME = libft.a
+libft_functions = include/*.c
+libft: main.c libft.h
+	gcc -o output $(libft_functions) main.c
 
-SRC = *.c
-
-OBJ = *.o
-
-all: $(NAME)
-
-$(NAME):
-	gcc -Wall -Werror -Wextra -c -I libft.h $(SRC)
-	ar rcs $(NAME) $(OBJ)
-clean:
-	rm -f $(OBJ)
-fclean: clean
-	rm -f $(NAME)
-re: fclean all
-.PHONY:
-	gcc -o output $(SRC) test/testcode.c
-	./output
-	rm -f output
