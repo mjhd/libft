@@ -10,13 +10,22 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_strcmp(const char *s1, const char *s2)
-{
-	int diff;
+#include "libft.h"
 
-	diff = 0;
-	while (s1[diff] && s1[diff] == s2[diff])
-		diff++;
-	diff = (int)s1[diff] - (int)s2[diff];
-	return (diff);
+int		ft_strcmp(const char *s1, const char *s2)
+{
+	size_t			i;
+	unsigned char	*cpy_s1;
+	unsigned char	*cpy_s2;
+
+	i = 0;
+	cpy_s1 = (unsigned char *)s1;
+	cpy_s2 = (unsigned char *)s2;
+	while (cpy_s1[i] == cpy_s2[i])
+	{
+		if (!cpy_s1[i] && !cpy_s2[i])
+			return (0);
+		i++;
+	}
+	return (cpy_s1[i] - cpy_s2[i]);
 }

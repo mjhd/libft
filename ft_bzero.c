@@ -12,13 +12,16 @@
 
 #include "libft.h"
 
-void	ft_bzero(void *dst, size_t size)
+void	ft_bzero(void *s, size_t n)
 {
-	unsigned char	*wrt_pnt;
-	int				i;
+	size_t	i;
+	char	*cpy;
 
-	wrt_pnt = dst;
 	i = 0;
-	while (i < (int)size)
-		wrt_pnt[i++] = (unsigned char)'0';
+	cpy = s;
+	while (i < n)
+	{
+		cpy[i] = 0;
+		i++;
+	}
 }

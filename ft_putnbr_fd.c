@@ -10,39 +10,26 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+
 #include "libft.h"
 
-static void	ft_printnum_fd(int val, int length, int fd)
+void	ft_putnbr_fd(int n, int fd)
 {
-	int		i;
-	int		output[length];
-	int		value;
-	char	alpha;
-
-	i = length;
-	if (val <= 0)
+	if (n == -2147483648)
 	{
-		alpha = (val == 0) ? '0' : '-';
-		write(fd, &alpha, 1);
+		ft_putstr_fd("-2147483648", fd);
+		return ;
 	}
-	value = (val < 0) ? (val * -1) : val;
-	while ((output[--length] = value % 10) || value)
-		value = (value - (value % 10)) / 10;
-	while (i--)
+	if (n < 0)
 	{
-		alpha = (output[++length] + '0');
-		write(fd, &alpha, 1);
+		ft_putchar_fd('-', fd);
+		n = -n;
 	}
-}
-
-void		ft_putnbr_fd(int val, int fd)
-{
-	int		value;
-	int		length;
-
-	value = (val) ? val : (val * -1);
-	length = 0;
-	while (value && ++length)
-		value = (value - (value % 10)) / 10;
-	ft_printnum_fd(val, length, fd);
+	if (n >= 10)
+	{
+		ft_putnbr_fd(n / 10, fd);
+		ft_putnbr_fd(n % 10, fd);
+	}
+	else
+		ft_putchar_fd(n + '0', fd);
 }

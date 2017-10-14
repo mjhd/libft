@@ -1,0 +1,3 @@
+/home/fishboy/Dropbox/Projects/CourseWork/42/for-moulibft/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/fishboy/Dropbox/Projects/CourseWork/42/for-moulibft/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/fishboy/Dropbox/Projects/CourseWork/42/for-moulibft/cmake-build-debug/CMakeFiles/for_moulibft.dir

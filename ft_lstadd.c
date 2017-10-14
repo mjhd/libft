@@ -12,8 +12,10 @@
 
 #include "libft.h"
 
-void	ft_lstadd(t_list **alst, t_list *new_link)
+void	ft_lstadd(t_list **alst, t_list *new)
 {
-	((*new_link).next) = &(*(*alst));
-	(*alst) = &(*new_link);
+	if (!alst || !new)
+		return ;
+	new->next = *alst;
+	*alst = new;
 }

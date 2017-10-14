@@ -39,15 +39,14 @@ char				*ft_itoa(int n);
 void				*ft_memalloc(size_t size);
 void				ft_memdel(void **ap);
 void				*ft_memset(void *dst, int c, size_t size);
-void				*ft_memcpy(void *dst, void *src, size_t size);
-void				*ft_memccpy(void *dst, void *src, int c, size_t size);
-void				*ft_memmove(void *dst, void *src, size_t size);
+void				*ft_memcpy(void *dst, const void *src, size_t size);
+void				*ft_memccpy(void *dst, const void *src, int c, size_t size);
+void				*ft_memmove(void *dst, const void *src, size_t size);
 
 void				ft_bzero(void *dst, size_t size);
-void				*ft_strcpy(char *dst, const char *src);
 char				*ft_strdup(const char *s);
-void				*ft_strcpy(char *dst, const char *src);
-void				*ft_strncpy(char *dst, const char *src, size_t size);
+char				*ft_strcpy(char *dst, const char *src);
+char				*ft_strncpy(char *dst, const char *src, size_t size);
 char				*ft_strtrim(char const *s);
 char				*ft_strcat(char *dst, const char *src);
 char				*ft_strncat(char *dst, const char *src, size_t size);
@@ -86,7 +85,7 @@ int					ft_isprint(int c);
 int					ft_memcmp(void *s1, void *s2, size_t size);
 void				*ft_memchr(const void *s, int c, size_t size);
 
-int					ft_strlen(char const *s);
+size_t				ft_strlen(char const *s);
 int					ft_strequ(char const *s1, char const *s2);
 int					ft_strnequ(char const *s1, char const *s2, size_t size);
 

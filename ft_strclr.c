@@ -10,8 +10,11 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
+
 void	ft_strclr(char *s)
 {
-	while (*(++s - 1))
-		*(s - 1) = '\0';
+	if (s == NULL)
+		return ;
+	ft_bzero(s, ft_strlen(s) + 1);
 }

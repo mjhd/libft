@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="for_moulibft"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/fishboy/Dropbox/Projects/CourseWork/42/for-moulibft/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/fishboy/Dropbox/Projects/CourseWork/42/for-moulibft/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/fishboy/Dropbox/Projects/CourseWork/42/for-moulibft/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/fishboy/Dropbox/Projects/CourseWork/42/for-moulibft/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/fishboy/Dropbox/Projects/CourseWork/42/for-moulibft/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/fishboy/Dropbox/Projects/CourseWork/42/for-moulibft/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/fishboy/Dropbox/Projects/CourseWork/42/for-moulibft/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/fishboy/Dropbox/Projects/CourseWork/42/for-moulibft/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/fishboy/Dropbox/Projects/CourseWork/42/for-moulibft/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/fishboy/Dropbox/Projects/CourseWork/42/for-moulibft/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/fishboy/Dropbox/Projects/CourseWork/42/for-moulibft/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/fishboy/Dropbox/Projects/CourseWork/42/for-moulibft/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/fishboy/Dropbox/Projects/CourseWork/42/for-moulibft/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/fishboy/Dropbox/Projects/CourseWork/42/for-moulibft/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/fishboy/Dropbox/Projects/CourseWork/42/for-moulibft/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="for_moulibft">
+				<Option output="/home/fishboy/Dropbox/Projects/CourseWork/42/for-moulibft/cmake-build-debug/for_moulibft" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/fishboy/Dropbox/Projects/CourseWork/42/for-moulibft/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/fishboy/Dropbox/Projects/CourseWork/42/for-moulibft/cmake-build-debug/Makefile&quot;  VERBOSE=1 for_moulibft"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/fishboy/Dropbox/Projects/CourseWork/42/for-moulibft/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/fishboy/Dropbox/Projects/CourseWork/42/for-moulibft/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/fishboy/Dropbox/Projects/CourseWork/42/for-moulibft/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="for_moulibft/fast">
+				<Option output="/home/fishboy/Dropbox/Projects/CourseWork/42/for-moulibft/cmake-build-debug/for_moulibft" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/fishboy/Dropbox/Projects/CourseWork/42/for-moulibft/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/fishboy/Dropbox/Projects/CourseWork/42/for-moulibft/cmake-build-debug/Makefile&quot;  VERBOSE=1 for_moulibft/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/fishboy/Dropbox/Projects/CourseWork/42/for-moulibft/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/fishboy/Dropbox/Projects/CourseWork/42/for-moulibft/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/fishboy/Dropbox/Projects/CourseWork/42/for-moulibft/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/fishboy/Dropbox/Projects/CourseWork/42/for-moulibft/Makefile">
+			<Option target="for_moulibft"/>
+		</Unit>
+		<Unit filename="/home/fishboy/Dropbox/Projects/CourseWork/42/for-moulibft/c.txt">
+			<Option target="for_moulibft"/>
+		</Unit>
+		<Unit filename="/home/fishboy/Dropbox/Projects/CourseWork/42/for-moulibft/ft_atoi.c">
+			<Option target="for_moulibft"/>
+		</Unit>
+		<Unit filename="/home/fishboy/Dropbox/Projects/CourseWork/42/for-moulibft/ft_bzero.c">
+			<Option target="for_moulibft"/>
+		</Unit>
+		<Unit filename="/home/fishboy/Dropbox/Projects/CourseWork/42/for-moulibft/ft_isalnum.c">
+			<Option target="for_moulibft"/>
+		</Unit>
+		<Unit filename="/home/fishboy/Dropbox/Projects/CourseWork/42/for-moulibft/ft_isalpha.c">
+			<Option target="for_moulibft"/>
+		</Unit>
+		<Unit filename="/home/fishboy/Dropbox/Projects/CourseWork/42/for-moulibft/ft_isascii.c">
+			<Option target="for_moulibft"/>
+		</Unit>
+		<Unit filename="/home/fishboy/Dropbox/Projects/CourseWork/42/for-moulibft/ft_isdigit.c">
+			<Option target="for_moulibft"/>
+		</Unit>
+		<Unit filename="/home/fishboy/Dropbox/Projects/CourseWork/42/for-moulibft/ft_isprint.c">
+			<Option target="for_moulibft"/>
+		</Unit>
+		<Unit filename="/home/fishboy/Dropbox/Projects/CourseWork/42/for-moulibft/ft_itoa.c">
+			<Option target="for_moulibft"/>
+		</Unit>
+		<Unit filename="/home/fishboy/Dropbox/Projects/CourseWork/42/for-moulibft/ft_lstadd.c">
+			<Option target="for_moulibft"/>
+		</Unit>
+		<Unit filename="/home/fishboy/Dropbox/Projects/CourseWork/42/for-moulibft/ft_lstadd_end.c">
+			<Option target="for_moulibft"/>
+		</Unit>
+		<Unit filename="/home/fishboy/Dropbox/Projects/CourseWork/42/for-moulibft/ft_lstdel.c">
+			<Option target="for_moulibft"/>
+		</Unit>
+		<Unit filename="/home/fishboy/Dropbox/Projects/CourseWork/42/for-moulibft/ft_lstdelone.c">
+			<Option target="for_moulibft"/>
+		</Unit>
+		<Unit filename="/home/fishboy/Dropbox/Projects/CourseWork/42/for-moulibft/ft_lstiter.c">
+			<Option target="for_moulibft"/>
+		</Unit>
+		<Unit filename="/home/fishboy/Dropbox/Projects/CourseWork/42/for-moulibft/ft_lstmap.c">
+			<Option target="for_moulibft"/>
+		</Unit>
+		<Unit filename="/home/fishboy/Dropbox/Projects/CourseWork/42/for-moulibft/ft_lstnew.c">
+			<Option target="for_moulibft"/>
+		</Unit>
+		<Unit filename="/home/fishboy/Dropbox/Projects/CourseWork/42/for-moulibft/ft_memalloc.c">
+			<Option target="for_moulibft"/>
+		</Unit>
+		<Unit filename="/home/fishboy/Dropbox/Projects/CourseWork/42/for-moulibft/ft_memccpy.c">
+			<Option target="for_moulibft"/>
+		</Unit>
+		<Unit filename="/home/fishboy/Dropbox/Projects/CourseWork/42/for-moulibft/ft_memchr.c">
+			<Option target="for_moulibft"/>
+		</Unit>
+		<Unit filename="/home/fishboy/Dropbox/Projects/CourseWork/42/for-moulibft/ft_memcmp.c">
+			<Option target="for_moulibft"/>
+		</Unit>
+		<Unit filename="/home/fishboy/Dropbox/Projects/CourseWork/42/for-moulibft/ft_memcpy.c">
+			<Option target="for_moulibft"/>
+		</Unit>
+		<Unit filename="/home/fishboy/Dropbox/Projects/CourseWork/42/for-moulibft/ft_memdel.c">
+			<Option target="for_moulibft"/>
+		</Unit>
+		<Unit filename="/home/fishboy/Dropbox/Projects/CourseWork/42/for-moulibft/ft_memmove.c">
+			<Option target="for_moulibft"/>
+		</Unit>
+		<Unit filename="/home/fishboy/Dropbox/Projects/CourseWork/42/for-moulibft/ft_memset.c">
+			<Option target="for_moulibft"/>
+		</Unit>
+		<Unit filename="/home/fishboy/Dropbox/Projects/CourseWork/42/for-moulibft/ft_putchar.c">
+			<Option target="for_moulibft"/>
+		</Unit>
+		<Unit filename="/home/fishboy/Dropbox/Projects/CourseWork/42/for-moulibft/ft_putchar_fd.c">
+			<Option target="for_moulibft"/>
+		</Unit>
+		<Unit filename="/home/fishboy/Dropbox/Projects/CourseWork/42/for-moulibft/ft_putendl.c">
+			<Option target="for_moulibft"/>
+		</Unit>
+		<Unit filename="/home/fishboy/Dropbox/Projects/CourseWork/42/for-moulibft/ft_putendl_fd.c">
+			<Option target="for_moulibft"/>
+		</Unit>
+		<Unit filename="/home/fishboy/Dropbox/Projects/CourseWork/42/for-moulibft/ft_putnbr.c">
+			<Option target="for_moulibft"/>
+		</Unit>
+		<Unit filename="/home/fishboy/Dropbox/Projects/CourseWork/42/for-moulibft/ft_putnbr_fd.c">
+			<Option target="for_moulibft"/>
+		</Unit>
+		<Unit filename="/home/fishboy/Dropbox/Projects/CourseWork/42/for-moulibft/ft_putstr.c">
+			<Option target="for_moulibft"/>
+		</Unit>
+		<Unit filename="/home/fishboy/Dropbox/Projects/CourseWork/42/for-moulibft/ft_putstr_fd.c">
+			<Option target="for_moulibft"/>
+		</Unit>
+		<Unit filename="/home/fishboy/Dropbox/Projects/CourseWork/42/for-moulibft/ft_strcat.c">
+			<Option target="for_moulibft"/>
+		</Unit>
+		<Unit filename="/home/fishboy/Dropbox/Projects/CourseWork/42/for-moulibft/ft_strchr.c">
+			<Option target="for_moulibft"/>
+		</Unit>
+		<Unit filename="/home/fishboy/Dropbox/Projects/CourseWork/42/for-moulibft/ft_strclr.c">
+			<Option target="for_moulibft"/>
+		</Unit>
+		<Unit filename="/home/fishboy/Dropbox/Projects/CourseWork/42/for-moulibft/ft_strcmp.c">
+			<Option target="for_moulibft"/>
+		</Unit>
+		<Unit filename="/home/fishboy/Dropbox/Projects/CourseWork/42/for-moulibft/ft_strcpy.c">
+			<Option target="for_moulibft"/>
+		</Unit>
+		<Unit filename="/home/fishboy/Dropbox/Projects/CourseWork/42/for-moulibft/ft_strdel.c">
+			<Option target="for_moulibft"/>
+		</Unit>
+		<Unit filename="/home/fishboy/Dropbox/Projects/CourseWork/42/for-moulibft/ft_strdup.c">
+			<Option target="for_moulibft"/>
+		</Unit>
+		<Unit filename="/home/fishboy/Dropbox/Projects/CourseWork/42/for-moulibft/ft_strequ.c">
+			<Option target="for_moulibft"/>
+		</Unit>
+		<Unit filename="/home/fishboy/Dropbox/Projects/CourseWork/42/for-moulibft/ft_striter.c">
+			<Option target="for_moulibft"/>
+		</Unit>
+		<Unit filename="/home/fishboy/Dropbox/Projects/CourseWork/42/for-moulibft/ft_striteri.c">
+			<Option target="for_moulibft"/>
+		</Unit>
+		<Unit filename="/home/fishboy/Dropbox/Projects/CourseWork/42/for-moulibft/ft_strjoin.c">
+			<Option target="for_moulibft"/>
+		</Unit>
+		<Unit filename="/home/fishboy/Dropbox/Projects/CourseWork/42/for-moulibft/ft_strlcat.c">
+			<Option target="for_moulibft"/>
+		</Unit>
+		<Unit filename="/home/fishboy/Dropbox/Projects/CourseWork/42/for-moulibft/ft_strlen.c">
+			<Option target="for_moulibft"/>
+		</Unit>
+		<Unit filename="/home/fishboy/Dropbox/Projects/CourseWork/42/for-moulibft/ft_strmap.c">
+			<Option target="for_moulibft"/>
+		</Unit>
+		<Unit filename="/home/fishboy/Dropbox/Projects/CourseWork/42/for-moulibft/ft_strmapi.c">
+			<Option target="for_moulibft"/>
+		</Unit>
+		<Unit filename="/home/fishboy/Dropbox/Projects/CourseWork/42/for-moulibft/ft_strncat.c">
+			<Option target="for_moulibft"/>
+		</Unit>
+		<Unit filename="/home/fishboy/Dropbox/Projects/CourseWork/42/for-moulibft/ft_strncmp.c">
+			<Option target="for_moulibft"/>
+		</Unit>
+		<Unit filename="/home/fishboy/Dropbox/Projects/CourseWork/42/for-moulibft/ft_strncpy.c">
+			<Option target="for_moulibft"/>
+		</Unit>
+		<Unit filename="/home/fishboy/Dropbox/Projects/CourseWork/42/for-moulibft/ft_strnequ.c">
+			<Option target="for_moulibft"/>
+		</Unit>
+		<Unit filename="/home/fishboy/Dropbox/Projects/CourseWork/42/for-moulibft/ft_strnew.c">
+			<Option target="for_moulibft"/>
+		</Unit>
+		<Unit filename="/home/fishboy/Dropbox/Projects/CourseWork/42/for-moulibft/ft_strnstr.c">
+			<Option target="for_moulibft"/>
+		</Unit>
+		<Unit filename="/home/fishboy/Dropbox/Projects/CourseWork/42/for-moulibft/ft_strrchr.c">
+			<Option target="for_moulibft"/>
+		</Unit>
+		<Unit filename="/home/fishboy/Dropbox/Projects/CourseWork/42/for-moulibft/ft_strsplit.c">
+			<Option target="for_moulibft"/>
+		</Unit>
+		<Unit filename="/home/fishboy/Dropbox/Projects/CourseWork/42/for-moulibft/ft_strstr.c">
+			<Option target="for_moulibft"/>
+		</Unit>
+		<Unit filename="/home/fishboy/Dropbox/Projects/CourseWork/42/for-moulibft/ft_strsub.c">
+			<Option target="for_moulibft"/>
+		</Unit>
+		<Unit filename="/home/fishboy/Dropbox/Projects/CourseWork/42/for-moulibft/ft_strtrim.c">
+			<Option target="for_moulibft"/>
+		</Unit>
+		<Unit filename="/home/fishboy/Dropbox/Projects/CourseWork/42/for-moulibft/ft_tolower.c">
+			<Option target="for_moulibft"/>
+		</Unit>
+		<Unit filename="/home/fishboy/Dropbox/Projects/CourseWork/42/for-moulibft/ft_toupper.c">
+			<Option target="for_moulibft"/>
+		</Unit>
+		<Unit filename="/home/fishboy/Dropbox/Projects/CourseWork/42/for-moulibft/libft.a">
+			<Option target="for_moulibft"/>
+		</Unit>
+		<Unit filename="/home/fishboy/Dropbox/Projects/CourseWork/42/for-moulibft/libft.h">
+			<Option target="for_moulibft"/>
+		</Unit>
+		<Unit filename="/home/fishboy/Dropbox/Projects/CourseWork/42/for-moulibft/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
