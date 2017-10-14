@@ -12,46 +12,48 @@
 
 #include "libft.h"
 
-static char	*ft_returnnum(int val, int length)
+int		ft_counter(int n)
 {
 	int		len;
-	char	*output;
-	int		value;
-	int		num;
-	int		i;
+	long	n_cpy;
 
-	len = length + ((val < 0) ? 1 : 0);
-	output = (char*)ft_memalloc(sizeof(char) * (len + 1));
-	output[len] = '\0';
-	i = len;
-	value = (val < 0) ? (val * -1) : val;
-	while (i-- > ((val < 0) ? 1 : 0))
+	len = 0;
+	n_cpy = (long)n;
+	if (n_cpy <= 0)
 	{
-		num = value % 10;
-		output[i] = num + '0';
-		value -= num;
-		value /= 10;
+		len++;
+		n_cpy = -n_cpy;
 	}
-	output[i + 1] = (val < 0) ? '-' : output[i + 1];
-	return (output);
+	while (n_cpy != 0)
+	{
+		len++;
+		n_cpy /= 10;
+	}
+	return (len);
 }
 
 char		*ft_itoa(int n)
 {
-	int		value;
-	int		num;
-	int		length;
+	int		len;
+	long	n_cpy;
+	char	*str;
 
-	if (n == 0)
-		return (0);
-	value = (n < 0) ? (n * -1) : n;
-	length = 0;
-	while (value)
+	len = ft_counter(n);
+	n_cpy = (long)n;
+	str = ft_strnew(len);
+	if (str == NULL)
+		return (NULL);
+	str[len--] = '\0';
+	if (n_cpy < 0)
 	{
-		num = value % 10;
-		value -= num;
-		value /= 10;
-		length++;
+		str[0] = '-';
+		n_cpy = -n_cpy;
 	}
-	return (ft_returnnum(n, length));
+	str[len--] = (n_cpy % 10) + '0';
+	while (n_cpy >= 10)
+	{
+		n_cpy /= 10;
+		str[len--] = (n_cpy % 10) + '0';
+	}
+	return (str);
 }
