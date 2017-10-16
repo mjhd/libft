@@ -12,33 +12,13 @@
 
 #include "libft.h"
 
-int		ft_counter(int n)
-{
-	int		len;
-	long	n_cpy;
-
-	len = 0;
-	n_cpy = (long)n;
-	if (n_cpy <= 0)
-	{
-		len++;
-		n_cpy = -n_cpy;
-	}
-	while (n_cpy != 0)
-	{
-		len++;
-		n_cpy /= 10;
-	}
-	return (len);
-}
-
 char		*ft_itoa(int n)
 {
 	int		len;
 	long	n_cpy;
 	char	*str;
 
-	len = ft_counter(n);
+	len = ft_digits(n);
 	n_cpy = (long)n;
 	str = ft_strnew(len);
 	if (str == NULL)

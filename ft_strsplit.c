@@ -12,56 +12,53 @@
 
 #include "libft.h"
 
-static char	**ft_strspliter(char const *s, char c, int strlen, int subcount)
+static char	*ft_strsep(char const *s, int len, long i)
 {
-	int		i;
-	char	**list;
+	char	*str;
 
-	list = ft_memalloc(sizeof(char **) * (subcount + 1));
-	list[subcount] = (char *)('\0');
-	while (subcount--)
+	str = ft_strnew(len);
+	if (str == NULL)
+		return (NULL);
+	str[len--] = '\0';
+	while (len >= 0)
+		str[len--] = s[i--];
+	return (str);
+}
+
+static char	**ft_strsubsplit(char const *s, char **arr, int arr_len, char c)
+{
+	int		index;
+	int		str_len;
+	long	i;
+
+	i = 0;
+	index = 0;
+	while (index < arr_len)
 	{
-		while (*(s - 1) == c)
-			s--;
-		i = 0;
-		while (strlen-- && *(--s) != c)
+		str_len = 0;
+		while (s[i] && s[i] == c)
 			i++;
-		strlen++;
-		list[subcount] = ft_strnew(i);
-		i = 0;
+		while (s[i] && s[i] != c)
+		{
+			i++;
+			str_len++;
+		}
+		if (s[i] == '\0' || s[i] == c)
+			arr[index++] = ft_strsep(s, str_len, i - 1);
 	}
-	return (list);
+	arr[index] = NULL;
+	return (arr);
 }
 
 char		**ft_strsplit(char const *s, char c)
 {
-	int		subcount;
-	int		strlen;
-	int		bigstrlen;
-	char	**rtnpnt;
+	int		arr_len;
+	char	**arr;
 
-	bigstrlen = 0;
-	subcount = 0;
-	strlen = 0;
-	while (*s == c)
-		s++;
-	while (*s && ++strlen && ++bigstrlen)
-	{
-		subcount += (!(*s) || *(++s) == c) ? 1 : 0;
-		while (*s == c && bigstrlen++)
-			s++;
-	}
-	subcount += (!*s && strlen && *(s - 1) != c) ? 1 : 0;
-	rtnpnt = ft_strspliter(s, c, strlen, subcount);
-	s -= bigstrlen;
-	while (*rtnpnt)
-	{
-		strlen = 0;
-		while (*s != c && *s)
-			rtnpnt[0][strlen++] = *s++;
-		while (*s == c)
-			s++;
-		rtnpnt++;
-	}
-	return (rtnpnt -= subcount);
+	if (s == NULL)
+		return (NULL);
+	arr_len = ft_strcount(s, c);
+	if (!(arr = (char **)malloc(sizeof(char *) * arr_len + 1)))
+		return (NULL);
+	return (ft_strsubsplit(s, arr, arr_len, c));
 }

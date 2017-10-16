@@ -9,25 +9,23 @@
 /*   Updated: 2017/09/29 12:00:00 by mhouser          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
 #include "libft.h"
 
-char	*ft_strmap(char const *s, char (*f)(char))
+int		ft_strcount(char const *s, char c)
 {
+	int		count;
 	size_t	i;
-	char	*new_s;
 
-	if (s == NULL || f == NULL)
-		return (NULL);
 	i = 0;
-	new_s = ft_strnew(ft_strlen(s));
-	if (new_s == NULL)
-		return (NULL);
+	count = 0;
 	while (s[i])
 	{
-		new_s[i] = f(s[i]);
-		i++;
+		while (s[i] == c)
+			i++;
+		while (s[i] && s[i] != c)
+			i++;
+		if (s[i - 1] != c)
+			count++;
 	}
-	new_s[i] = '\0';
-	return (new_s);
+	return (count);
 }

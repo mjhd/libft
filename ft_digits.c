@@ -10,24 +10,22 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
-
-char	*ft_strmap(char const *s, char (*f)(char))
+int		ft_digits(int n)
 {
-	size_t	i;
-	char	*new_s;
+	int		len;
+	long	n_cpy;
 
-	if (s == NULL || f == NULL)
-		return (NULL);
-	i = 0;
-	new_s = ft_strnew(ft_strlen(s));
-	if (new_s == NULL)
-		return (NULL);
-	while (s[i])
+	len = 0;
+	n_cpy = (long)n;
+	if (n_cpy <= 0)
 	{
-		new_s[i] = f(s[i]);
-		i++;
+		len++;
+		n_cpy = -n_cpy;
 	}
-	new_s[i] = '\0';
-	return (new_s);
+	while (n_cpy != 0)
+	{
+		len++;
+		n_cpy /= 10;
+	}
+	return (len);
 }
