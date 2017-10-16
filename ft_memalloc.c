@@ -14,11 +14,8 @@
 
 void	*ft_memalloc(size_t size)
 {
-	void	*mem;
+	void *pnt;
 
-	mem = malloc(size);
-	if (mem == NULL)
-		return (NULL);
-	ft_bzero(mem, size);
-	return (mem);
+	pnt = (void *)malloc((int)size);
+	return (pnt);
 }
