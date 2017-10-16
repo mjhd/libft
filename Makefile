@@ -1,14 +1,14 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   ft_atoi.c                                          :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: mhouser <marvin@42.fr>                     +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/09/29 11:59:54 by mhouser           #+#    #+#             */
-/*   Updated: 2017/09/29 12:00:00 by mhouser          ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    ft_atoi.c                                          :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: mhouser <marvin@42.fr>                     +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2017/09/29 11:59:54 by mhouser           #+#    #+#              #
+#    Updated: 2017/09/29 12:00:00 by mhouser          ###   ########.fr        #
+#                                                                              #
+# ***************************************************************************  #
 
 NAME = libft.a
 
@@ -21,8 +21,8 @@ SRC = ft_atoi.c ft_lstmap.c ft_putchar_fd.c ft_strdel.c ft_strnequ.c \
 	  ft_memcpy.c ft_putstr_fd.c ft_strlcat.c ft_strsub.c ft_isprint.c \
 	  ft_memdel.c ft_strcat.c ft_strlen.c ft_strtrim.c ft_itoa.c ft_memmove.c \
 	  ft_strchr.c ft_strmap.c ft_lstadd.c ft_memset.c ft_strclr.c \
-	  ft_strmapi.c ft_tolower.c ft_lstdel.c ft_mergesort.c ft_strcmp.c \
-	  ft_strncat.c ft_toupper.c ft_lstdelone.c ft_printstrlist.c ft_strcount.c \
+	  ft_strmapi.c ft_tolower.c ft_lstdel.c ft_strcmp.c \
+	  ft_strncat.c ft_toupper.c ft_lstdelone.c ft_strcount.c \
 	  ft_strncmp.c ft_lstiter.c ft_putchar.c ft_strcpy.c ft_strncpy.c
 
 OBJ = $(SRC:.c=.o)
@@ -30,7 +30,7 @@ OBJ = $(SRC:.c=.o)
 all: $(NAME)
 
 $(NAME):
-	gcc -Wall -Werror -Wextra -c -I libft.h $(SRC)
+	gcc -Wall -Werror -Wextra -c libft.h $(SRC)
 	ar rcs $(NAME) $(OBJ)
 clean:
 	/bin/rm -f $(OBJ)
