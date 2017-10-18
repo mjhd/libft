@@ -13,69 +13,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0c489dad-1876-406c-9468-fa91e6650a02" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.ft_strcat.swp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/libft.h.gch" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Makefile" afterPath="$PROJECT_DIR$/Makefile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ft_atoi.c" afterPath="$PROJECT_DIR$/ft_atoi.c" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ft_bzero.c" afterPath="$PROJECT_DIR$/ft_bzero.c" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ft_digits.c" afterPath="$PROJECT_DIR$/ft_digits.c" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ft_isalnum.c" afterPath="$PROJECT_DIR$/ft_isalnum.c" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ft_isalpha.c" afterPath="$PROJECT_DIR$/ft_isalpha.c" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ft_isascii.c" afterPath="$PROJECT_DIR$/ft_isascii.c" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ft_isdigit.c" afterPath="$PROJECT_DIR$/ft_isdigit.c" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ft_isprint.c" afterPath="$PROJECT_DIR$/ft_isprint.c" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ft_itoa.c" afterPath="$PROJECT_DIR$/ft_itoa.c" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ft_lstadd.c" afterPath="$PROJECT_DIR$/ft_lstadd.c" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ft_lstdel.c" afterPath="$PROJECT_DIR$/ft_lstdel.c" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ft_lstdelone.c" afterPath="$PROJECT_DIR$/ft_lstdelone.c" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ft_lstiter.c" afterPath="$PROJECT_DIR$/ft_lstiter.c" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ft_lstmap.c" afterPath="$PROJECT_DIR$/ft_lstmap.c" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ft_lstnew.c" afterPath="$PROJECT_DIR$/ft_lstnew.c" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ft_memalloc.c" afterPath="$PROJECT_DIR$/ft_memalloc.c" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ft_memccpy.c" afterPath="$PROJECT_DIR$/ft_memccpy.c" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ft_memchr.c" afterPath="$PROJECT_DIR$/ft_memchr.c" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ft_memcmp.c" afterPath="$PROJECT_DIR$/ft_memcmp.c" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ft_memcpy.c" afterPath="$PROJECT_DIR$/ft_memcpy.c" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ft_memdel.c" afterPath="$PROJECT_DIR$/ft_memdel.c" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ft_memmove.c" afterPath="$PROJECT_DIR$/ft_memmove.c" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ft_memset.c" afterPath="$PROJECT_DIR$/ft_memset.c" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ft_putchar.c" afterPath="$PROJECT_DIR$/ft_putchar.c" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ft_putchar_fd.c" afterPath="$PROJECT_DIR$/ft_putchar_fd.c" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ft_putendl.c" afterPath="$PROJECT_DIR$/ft_putendl.c" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ft_putendl_fd.c" afterPath="$PROJECT_DIR$/ft_putendl_fd.c" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ft_putnbr.c" afterPath="$PROJECT_DIR$/ft_putnbr.c" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ft_putnbr_fd.c" afterPath="$PROJECT_DIR$/ft_putnbr_fd.c" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ft_putstr.c" afterPath="$PROJECT_DIR$/ft_putstr.c" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ft_putstr_fd.c" afterPath="$PROJECT_DIR$/ft_putstr_fd.c" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ft_strcat.c" afterPath="$PROJECT_DIR$/ft_strcat.c" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ft_strchr.c" afterPath="$PROJECT_DIR$/ft_strchr.c" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ft_strclr.c" afterPath="$PROJECT_DIR$/ft_strclr.c" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ft_strcmp.c" afterPath="$PROJECT_DIR$/ft_strcmp.c" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ft_strcount.c" afterPath="$PROJECT_DIR$/ft_strcount.c" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ft_strcpy.c" afterPath="$PROJECT_DIR$/ft_strcpy.c" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ft_strdel.c" afterPath="$PROJECT_DIR$/ft_strdel.c" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ft_strdup.c" afterPath="$PROJECT_DIR$/ft_strdup.c" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ft_striter.c" afterPath="$PROJECT_DIR$/ft_striter.c" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ft_striteri.c" afterPath="$PROJECT_DIR$/ft_striteri.c" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ft_strjoin.c" afterPath="$PROJECT_DIR$/ft_strjoin.c" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ft_strlcat.c" afterPath="$PROJECT_DIR$/ft_strlcat.c" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ft_strlen.c" afterPath="$PROJECT_DIR$/ft_strlen.c" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ft_strmap.c" afterPath="$PROJECT_DIR$/ft_strmap.c" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ft_strmapi.c" afterPath="$PROJECT_DIR$/ft_strmapi.c" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ft_strncat.c" afterPath="$PROJECT_DIR$/ft_strncat.c" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ft_strncmp.c" afterPath="$PROJECT_DIR$/ft_strncmp.c" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ft_strncpy.c" afterPath="$PROJECT_DIR$/ft_strncpy.c" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ft_strnew.c" afterPath="$PROJECT_DIR$/ft_strnew.c" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ft_strnstr.c" afterPath="$PROJECT_DIR$/ft_strnstr.c" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ft_strrchr.c" afterPath="$PROJECT_DIR$/ft_strrchr.c" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ft_strsplit.c" afterPath="$PROJECT_DIR$/ft_strsplit.c" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ft_strstr.c" afterPath="$PROJECT_DIR$/ft_strstr.c" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ft_strsub.c" afterPath="$PROJECT_DIR$/ft_strsub.c" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ft_strtrim.c" afterPath="$PROJECT_DIR$/ft_strtrim.c" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ft_tolower.c" afterPath="$PROJECT_DIR$/ft_tolower.c" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ft_toupper.c" afterPath="$PROJECT_DIR$/ft_toupper.c" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libft.h" afterPath="$PROJECT_DIR$/libft.h" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/for-moulibft.iml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -508,12 +451,12 @@
       <workItem from="1507516372001" duration="18253000" />
       <workItem from="1507937921702" duration="7147000" />
       <workItem from="1508093269226" duration="25000" />
-      <workItem from="1508294783347" duration="1391000" />
+      <workItem from="1508294783347" duration="1775000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="36846000" />
+    <option name="totallyTimeSpent" value="37230000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="73" y="24" width="1293" height="744" extended-state="6" />
