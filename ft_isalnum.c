@@ -14,6 +14,8 @@ int	ft_isalnum(int c)
 {
 	int truth;
 
-	truth = ((65 <= c && c <= 90) || (97 <= c && c <= 122) || (48 <= c && c <= 57)) ? 1 : 0;
+	truth = ((65 <= c && c <= 90) ||
+			(97 <= c && c <= 122) ||
+			(48 <= c && c <= 57)) ? 1 : 0;
 	return (truth);
 }
