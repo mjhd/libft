@@ -10,10 +10,12 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-int		ft_isalnum(int c)
+int	ft_isalnum(int c)
 {
-	if ((c >= '0' && c <= '9') || (c >= 'A' && c <= 'Z') ||
-			(c >= 'a' && c <= 'z'))
-		return (1);
-	return (0);
+	int truth;
+
+	truth = (65 <= c && c <= 90) ? 1 : 0;
+	truth = ((97 <= c && c <= 122) || truth) ? 1 : 0;
+	truth = ((0 <= c && c <= 9) || truth) ? 1 : 0;
+	return (truth);
 }
