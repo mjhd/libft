@@ -19,3 +19,4 @@ int	ft_isalnum(int c)
 			(48 <= c && c <= 57)) ? 1 : 0;
 	return (truth);
 }
+//

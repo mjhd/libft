@@ -16,18 +16,19 @@ int		ft_atoi(const char *s)
 {
 	int value;
 	int multiplier;
-	int length;
 
 	value = 0;
 	while(*s && (*s == ' ' || *s == '\n' || *s == '\f' || *s == '\t' || *s == '\v' || *s == '\r'))
 		s++;
 	s += (*s == '+') ? 1 : 0;
 	multiplier = ((*s) == '-' && *s++) ? -1 : 1;
-	length = (int)ft_strlen(s);
-	while (length && s[--length])
+	while (*s && (*s == ' ' || *s == '\n' || *s == '\f' || *s == '\t' || *s == '\v' || *s == '\r'))
+		s++;
+	while (*s && *s > 48 && *s < 57)
 	{
-		value += ((s[length] - '0') * multiplier);
-		multiplier *= 10;
+		value *= 10;
+		value += (*s++ - '0');
 	}
-	return(value);
+	return(value * multiplier);
 }
+//
