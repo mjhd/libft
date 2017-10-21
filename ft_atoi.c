@@ -22,8 +22,6 @@ int		ft_atoi(const char *s)
 		s++;
 	s += (*s == '+') ? 1 : 0;
 	multiplier = ((*s) == '-' && *s++) ? -1 : 1;
-	while (*s && (*s == ' ' || *s == '\n' || *s == '\f' || *s == '\t' || *s == '\v' || *s == '\r'))
-		s++;
 	while (*s && *s > 48 && *s < 57)
 	{
 		value *= 10;
