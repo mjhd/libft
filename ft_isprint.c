@@ -12,7 +12,9 @@
 
 int		ft_isprint(int c)
 {
-	if (c >= ' ' && c <= '~')
-		return (1);
-	return (0);
+	int truth;
+
+	truth = (c >= 32 && c <= 126) ? 1 : 0;
+	return (truth);
 }
+//
