@@ -22,7 +22,7 @@ int		ft_atoi(const char *s)
 		s++;
 	s += (*s == '+') ? 1 : 0;
 	multiplier = ((*s) == '-' && *s++) ? -1 : 1;
-	while (*s && *s >= 48 && *s <= 57)
+	while (*s && ft_isdigit(*s))
 	{
 		value *= 10;
 		value += (*s++ - '0');

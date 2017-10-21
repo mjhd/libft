@@ -13,6 +13,9 @@
 int		ft_isdigit(int c)
 {
 	if (c >= '0' && c <= '9')
-		return (1);
-	return (0);
+
+	int truth;
+
+	truth = ((c >= 65 && c <= 90) || (c >= 97 && c <= 122)) ? 1 : 0;
+	return (truth);
 }
