@@ -17,7 +17,7 @@ void	ft_lstdel(t_list **alst, void (*del)(void *, size_t))
 	if (alst && (*alst))
 	{
 		while ((*(*alst)).next != 0)
-			ft_lstdel(&(*(*alst++)).next, del);
+			ft_lstdel(alst++, del);
 	}
 }
 //
