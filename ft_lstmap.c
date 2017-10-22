@@ -16,11 +16,13 @@ t_list	*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem))
 {
 	t_list	*newlist;
 
-	newlist = ft_lstnew((*lst).content, (*lst).content_size);
-	while ((*lst).next)
+	newlist = ((*lst).content && (*lst).content_size) ? ft_lstnew((*lst).content, (*lst).content_size) : 0;
+	while (newlist && (*lst).next)
 	{
 		lst = (*lst).next;
-		ft_lstadd(&newlist, f(lst));
+		if ((*lst).content && (*lst).content_size)
+			ft_lstadd(&newlist, ft_lstnew((*(f(lst))).content, sizeof(char)));
+		else newlist = 0;
 	}
 	return (newlist);
 }
