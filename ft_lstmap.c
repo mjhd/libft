@@ -23,7 +23,7 @@ t_list	*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem))
 		if (lst)
 			ft_lstadd(&newlist, ft_lstnew((*(f(lst))).content, sizeof(char)));
 		else
-			return (0)
+			return (0);
 	}
 	return (newlist);
 }
