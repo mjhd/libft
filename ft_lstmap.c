@@ -23,7 +23,9 @@ t_list		*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem))
 {
 	t_list	*newlist;
 
-	newlist = (lst && f) ? ft_lstnew((*lst).content, (*lst).content_size) : 0;
+	if (!lst || !f)
+		return(0);
+	newlist = ft_lstnew((*lst).content, (*lst).content_size);
 	while (newlist && lst && (*lst).next)
 	{
 		lst = (*lst).next;
