@@ -12,7 +12,14 @@
 
 #include "libft.h"
 
-t_list	*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem))
+static void	ft_lstadd_end(t_list **alst, t_list *new_link)
+{
+	while((*(*alst)).next)
+		alst = &(*(*alst)).next;
+	(*(*alst)).next = &(*new_link);
+}
+
+t_list		*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem))
 {
 	t_list	*newlist;
 
@@ -20,7 +27,7 @@ t_list	*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem))
 	while (newlist && lst && (*lst).next)
 	{
 		lst = (*lst).next;
-		ft_lstadd(&newlist, ft_lstnew((*(f(lst))).content, (*lst).content_size));
+		ft_lstadd_end(&newlist, ft_lstnew((*(f(lst))).content, (*lst).content_size));
 	}
 	return (newlist);
 }
