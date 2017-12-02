@@ -14,7 +14,7 @@ int		ft_isdigit(int c)
 {
 	int truth;
 
-	truth = (c >= '0' && c <= '9') ? 1 : 0;
+	truth = (c >= 48 && c <= 57) ? 1 : 0;
 	return (truth);
 }
 //
