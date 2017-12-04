@@ -35,6 +35,12 @@ typedef struct		s_list
 	struct s_list	*next;
 }					t_list;
 
+typedef struct		inty
+{
+	struct inty 	*last;
+	char 			value;
+} 					inty;
+
 int					get_next_line(const int fd, char **line);
 int					ft_atoi(const char *str);
 void				ft_bzero(void *s, size_t n);
