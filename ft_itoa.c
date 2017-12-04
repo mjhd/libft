@@ -12,28 +12,36 @@
 
 #include "libft.h"
 
-char		*ft_itoa(int n)
+char        *ft_itoa(int n)
 {
-	int		len;
-	long	n_cpy;
-	char	*str;
+	struct inty *pnt;
+	struct inty *tmp;
+	char *a;
+	int buf;
+	int nodes;
 
-	len = ft_digits(n);
-	n_cpy = (long)n;
-	str = ft_strnew(len);
-	if (str == NULL)
-		return (NULL);
-	str[len--] = '\0';
-	if (n_cpy < 0)
+	pnt = (struct inty *)malloc(sizeof(struct inty));
+	nodes = 0;
+	while(n && ++nodes)
 	{
-		str[0] = '-';
-		n_cpy = -n_cpy;
+		buf = n % 10;
+		n -= buf;
+		n /= 10;
+		(*pnt).value = (char)(buf + '0');
+		if(n)
+		{
+			tmp = (struct inty *)malloc(sizeof(struct inty));
+			(*tmp).last = pnt;
+			(*pnt).last = (nodes == 1) ? 0 : (*pnt).last;
+			pnt = tmp;
+		}
 	}
-	str[len--] = (n_cpy % 10) + '0';
-	while (n_cpy >= 10)
+	a = malloc(sizeof(char) * (nodes + 1));
+	a[nodes] = '\0';
+	while(pnt)
 	{
-		n_cpy /= 10;
-		str[len--] = (n_cpy % 10) + '0';
+		*a++ = (*pnt).value;
+		pnt = (*pnt).last;
 	}
-	return (str);
+	return(a - nodes);
 }
