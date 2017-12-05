@@ -17,10 +17,17 @@ int itoa_assembler(struct inty *pnt, int n, struct inty **mod)
     struct inty *tmp;
     int nodes;
     int buf;
+    int sign;
 
     nodes = 0;
-    while((n || (!n && !nodes)) && ++nodes)
+    sign = 1;
+    while((n != 0 || (!n && !nodes)) && ++nodes)
     {
+        if (n < 0)
+        {
+            sign = -1;
+            n *= -1;
+        }
         buf = n % 10;
         n -= buf;
         n /= 10;
@@ -34,7 +41,7 @@ int itoa_assembler(struct inty *pnt, int n, struct inty **mod)
         pnt = tmp;
     }
     (*mod) = (nodes == 1) ? (*mod) : tmp;
-    return(nodes);
+    return(nodes * sign);
 }
 
 char        *ft_itoa(int n)
@@ -48,9 +55,18 @@ char        *ft_itoa(int n)
     pnt = (struct inty *)malloc(sizeof(struct inty));
     mod = &pnt;
     nodes = itoa_assembler(pnt, n, mod);
-    a = malloc(sizeof(char) * (nodes + 1));
+    offset = 1;
+    if (nodes < 0)
+    {
+        offset = 2;
+        nodes *= -1;
+    }
+    a = malloc(sizeof(char) * (nodes + offset));
+    if (offset == 2)
+        *a++ = '-';
+    offset--;
     a[nodes] = '\0';
-    offset = nodes;
+    offset += nodes;
     while(nodes--)
     {
         *a++ = (*pnt).value;
