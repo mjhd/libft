@@ -28,7 +28,7 @@ int itoa_assembler(struct inty *pnt, int n, struct inty **mod)
             sign = -1;
             n *= -1;
         }
-        buf = n % 10;
+        buf = (unsigned int)n % 10;
         n -= buf;
         n /= 10;
         (*pnt).value = (char)(buf + '0');
