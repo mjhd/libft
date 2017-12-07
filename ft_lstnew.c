@@ -29,7 +29,7 @@ t_list	*ft_lstnew(void const *content, size_t content_size)
 		(*newlist).content = ft_memalloc(content_size);
 		if (!(*newlist).content)
 		{
-			free((*newlist));
+			free((*newlist).content);
 			return(0);
 		}
 		ft_memcpy((*newlist).content, (void *)content, content_size);
