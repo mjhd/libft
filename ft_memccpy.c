@@ -20,7 +20,7 @@ void    *ft_memccpy(void *dest, const void *src, int c, size_t n)
     if (n <= 0)
         return(0);
     returner = (unsigned char*)dest;
-    while (i <= n)
+    while (i < n)
     {
         *(unsigned char*)dest++ = *(unsigned char*)src++;
         if ((char)*((unsigned char*)dest - 1) == c)
