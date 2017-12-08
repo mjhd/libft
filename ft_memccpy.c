@@ -10,21 +10,25 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+//#include "libft.h"
 
 void    *ft_memccpy(void *dest, const void *src, int c, size_t n)
 {
-    void *returner;
-    size_t i = 0;
+    size_t            i;
+    const char        *cpy_src;
+    unsigned char    *cpy_dest;
+    unsigned char    cpy_c;
 
-    returner = (unsigned char*)dest;
+    i = 0;
+    cpy_c = (unsigned char)c;
+    cpy_src = src;
+    cpy_dest = dest;
     while (i < n)
     {
-        *(unsigned char*)dest++ = *(unsigned char*)src++;
-        if ((char)*((unsigned char*)dest - 1) == c)
-            return(returner);
+        cpy_dest[i] = cpy_src[i];
+        if (cpy_dest[i] == cpy_c)
+            return (cpy_dest);
         i++;
     }
-    return(0);
+    return (0);
 }
-//
