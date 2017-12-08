@@ -10,15 +10,13 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+//#include "libft.h"
 
 void    *ft_memccpy(void *dest, const void *src, int c, size_t n)
 {
     void *returner;
     size_t i = 0;
 
-    if (n <= 0)
-        return(0);
     returner = (unsigned char*)dest;
     while (i < n)
     {
