@@ -14,14 +14,11 @@
 
 void    *ft_memccpy(void *dest, const void *src, int c, size_t n)
 {
-    size_t i = 0;
-
-    while (i < n)
+    while (n--)
     {
         *(char *)dest++ = *(char *)src++;
         if (*((char *)dest - 1) == c)
             return(dest);
-        i++;
     }
     return(0);
 }
