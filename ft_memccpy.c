@@ -14,17 +14,13 @@
 
 void    *ft_memccpy(void *dest, const void *src, int c, size_t n)
 {
-    char *to;
-    char *from;
     size_t i = 0;
 
-    to = (char *)dest;
-    from = (char *)src;
     while (i < n)
     {
-        *to++ = *from++;
-        if (*(to - 1) == c)
-            return((void *)to);
+        *(char *)dest++ = *(char *)src++;
+        if (*((char *)dest - 1) == c)
+            return(dest);
         i++;
     }
     return(0);
