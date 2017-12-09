@@ -23,8 +23,8 @@ void    *ft_memccpy(void *dest, const void *src, int c, size_t n)
     while (i < n)
     {
         *to++ = *from++;
-        if (*(from - 1) == c)
-            return((void *)(to - 1));
+        if (*(to - 1) == c)
+            return((void *)to);
         i++;
     }
     return(0);
