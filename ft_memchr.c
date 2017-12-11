@@ -21,7 +21,7 @@ void    *ft_memchr(const void *s, int c, size_t n)
     i = 0;
     cpy_c = (unsigned char)c;
     cpy_src = (unsigned char *)s;
-    while (i < n)
+    while (n--)
     {
         if (cpy_src[i] == cpy_c)
             return (&cpy_src[i]);

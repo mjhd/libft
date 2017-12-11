@@ -11,7 +11,6 @@
   <component name="ChangeListManager">
     <list default="true" id="1385bbf6-8ce8-449c-a096-1579bc432e3f" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/ft_memchr.c" afterPath="$PROJECT_DIR$/ft_memchr.c" />
-      <change beforePath="$PROJECT_DIR$/libft.h.gch" afterPath="" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -26,8 +25,8 @@
       <file leaf-file-name="ft_memchr.c" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ft_memchr.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="29" column="13" lean-forward="false" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
+            <state relative-caret-position="459">
+              <caret line="27" column="12" lean-forward="false" selection-start-line="27" selection-start-column="12" selection-end-line="27" selection-end-column="12" />
               <folding />
             </state>
           </provider>
@@ -147,7 +146,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="41208000" />
+    <option name="totallyTimeSpent" value="41842000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1366" height="768" extended-state="6" />
@@ -551,8 +550,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ft_memchr.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="29" column="13" lean-forward="false" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
+        <state relative-caret-position="459">
+          <caret line="27" column="12" lean-forward="false" selection-start-line="27" selection-start-column="12" selection-end-line="27" selection-end-column="12" />
           <folding />
         </state>
       </provider>
