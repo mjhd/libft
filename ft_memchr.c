@@ -14,14 +14,9 @@
 
 void    *ft_memchr(const void *s, int c, size_t n)
 {
-    unsigned char    cpy_c;
-    unsigned char    *cpy_src;
-
-    cpy_c = (unsigned char)c;
-    cpy_src = (unsigned char *)s;
     while (n--)
     {
-        if (*(unsigned char *)s++ == cpy_c)
+        if (*(unsigned char *)s++ == (unsigned char)c)
             return ((void *)((unsigned char *)--s));
     }
     return (0);
