@@ -22,7 +22,7 @@ void    *ft_memchr(const void *s, int c, size_t n)
     while (n--)
     {
         if (*cpy_src++ == cpy_c)
-            return (cpy_src);
+            return (--cpy_src);
     }
     return (0);
 }
