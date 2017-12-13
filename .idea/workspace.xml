@@ -10,7 +10,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1385bbf6-8ce8-449c-a096-1579bc432e3f" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/ft_putnbr_fd.c" afterPath="$PROJECT_DIR$/ft_putnbr_fd.c" />
       <change beforePath="$PROJECT_DIR$/ft_putstr.c" afterPath="$PROJECT_DIR$/ft_putstr.c" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
@@ -56,8 +55,8 @@
       <file leaf-file-name="ft_putstr.c" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ft_putstr.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="25" lean-forward="true" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
+            <state relative-caret-position="306">
+              <caret line="18" column="21" lean-forward="false" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -215,12 +214,12 @@
       <workItem from="1512612021553" duration="6835000" />
       <workItem from="1512680292135" duration="599000" />
       <workItem from="1512684489452" duration="4000" />
-      <workItem from="1513070123941" duration="12787000" />
+      <workItem from="1513070123941" duration="12884000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="59455000" />
+    <option name="totallyTimeSpent" value="59552000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-83" y="0" width="1366" height="768" extended-state="6" />
@@ -430,8 +429,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ft_putstr.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="25" lean-forward="true" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
+        <state relative-caret-position="306">
+          <caret line="18" column="21" lean-forward="false" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
           <folding />
         </state>
       </provider>
