@@ -14,7 +14,7 @@
 
 char    *ft_strchr(const char *s, int c)
 {
-	while (s && (*s || *s == c))
+	while (*s || *s == c)
 	{
 		if (*s++ == c)
 			return(--s);
