@@ -19,6 +19,6 @@ char    *ft_strchr(const char *s, int c)
 		if (*s++ == c)
 			return(--s);
 	}
-	return(0);
+	return(NULL);
 }
 //
