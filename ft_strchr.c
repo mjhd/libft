@@ -14,11 +14,11 @@
 
 char    *ft_strchr(const char *s, int c)
 {
-	while (*s || *s == c)
-	{
-		if (*s++ == c)
-			return(--s);
-	}
-	return(NULL);
+    while (s && (*s++ || *s == c))
+    {
+        if (*s == c)
+            return((char *)s);
+    }
+    return(0);
 }
 //
