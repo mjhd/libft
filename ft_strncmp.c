@@ -12,22 +12,13 @@
 
 #include "libft.h"
 
-int		ft_strncmp(const char *s1, const char *s2, size_t n)
+int        ft_strncmp(const char *s1, const char *s2, size_t n)
 {
-	size_t			i;
-	unsigned char	*cpy_s1;
-	unsigned char	*cpy_s2;
-
-	i = 0;
-	cpy_s1 = (unsigned char *)s1;
-	cpy_s2 = (unsigned char *)s2;
-	if (n == 0)
-		return (0);
-	while (cpy_s1[i] == cpy_s2[i] && i < n)
+	while(s1 && s2 && (*s1 || *s2) && n--)
 	{
-		if (i == n - 1 || (!cpy_s1[i] && !cpy_s2[i]))
-			return (0);
-		i++;
+		if (*s1++ != *s2++)
+			return(*--s1 - *--s2);
 	}
-	return (cpy_s1[i] - cpy_s2[i]);
+	return(0);
 }
+//
