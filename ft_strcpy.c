@@ -12,16 +12,14 @@
 
 #include "libft.h"
 
-char	*ft_strcpy(char *dst, const char *src)
+char    *ft_strcpy(char *dst, const char *src)
 {
-	size_t	i;
+	char *return_pnt;
 
-	i = 0;
-	while (src[i])
-	{
-		dst[i] = src[i];
-		i++;
-	}
-	dst[i] = '\0';
-	return (dst);
+	return_pnt = dst;
+	while (*src)
+		*dst++ = *(char *)src++;
+	*dst = '\0';
+	return (return_pnt);
 }
+//

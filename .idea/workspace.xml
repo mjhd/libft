@@ -13,7 +13,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1385bbf6-8ce8-449c-a096-1579bc432e3f" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/ft_strncmp.c" afterPath="$PROJECT_DIR$/ft_strncmp.c" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/ft_strcount.c" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/ft_strcpy.c" afterPath="$PROJECT_DIR$/ft_strcpy.c" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -28,7 +30,7 @@
       <file leaf-file-name="ft_memcmp.c" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ft_memcmp.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
+            <state relative-caret-position="0">
               <caret line="17" column="5" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="23" selection-end-column="2" />
               <folding />
             </state>
@@ -45,11 +47,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ft_strncmp.c" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ft_strncmp.c" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ft_strncmp.c">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="195">
-              <caret line="16" column="41" lean-forward="true" selection-start-line="16" selection-start-column="41" selection-end-line="16" selection-end-column="41" />
+              <caret line="16" column="41" lean-forward="false" selection-start-line="16" selection-start-column="41" selection-end-line="16" selection-end-column="41" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ft_strcpy.c" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ft_strcpy.c">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="14" column="30" lean-forward="false" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
               <folding />
             </state>
           </provider>
@@ -102,6 +114,7 @@
         <option value="$PROJECT_DIR$/ft_strchr.c" />
         <option value="$PROJECT_DIR$/ft_strcmp.c" />
         <option value="$PROJECT_DIR$/ft_strncmp.c" />
+        <option value="$PROJECT_DIR$/ft_strcpy.c" />
       </list>
     </option>
   </component>
@@ -112,10 +125,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="23" />
-    <option name="y" value="124" />
+    <option name="x" value="17" />
+    <option name="y" value="48" />
     <option name="width" value="1326" />
-    <option name="height" value="550" />
+    <option name="height" value="703" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -185,15 +198,15 @@
       <workItem from="1512680292135" duration="599000" />
       <workItem from="1512684489452" duration="4000" />
       <workItem from="1513070123941" duration="26456000" />
-      <workItem from="1513314724787" duration="2065000" />
+      <workItem from="1513314724787" duration="2814000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="75189000" />
+    <option name="totallyTimeSpent" value="75938000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="23" y="124" width="1326" height="550" extended-state="0" />
+    <frame x="17" y="48" width="1326" height="703" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25188538" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -231,7 +244,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/for-moulibft/ft_isalpha.c" />
     <entry file="file://$PROJECT_DIR$/for-moulibft/ft_isascii.c" />
     <entry file="file://$PROJECT_DIR$/for-moulibft/ft_isalnum.c" />
     <entry file="file://$PROJECT_DIR$/for-moulibft/ft_digits.c" />
@@ -316,13 +328,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ft_strcpy.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ft_itoa.c">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -404,7 +409,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ft_memcmp.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
+        <state relative-caret-position="0">
           <caret line="17" column="5" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="23" selection-end-column="2" />
           <folding />
         </state>
@@ -456,7 +461,23 @@
     <entry file="file://$PROJECT_DIR$/ft_strncmp.c">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
-          <caret line="16" column="41" lean-forward="true" selection-start-line="16" selection-start-column="41" selection-end-line="16" selection-end-column="41" />
+          <caret line="16" column="41" lean-forward="false" selection-start-line="16" selection-start-column="41" selection-end-line="16" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ft_strcount.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="32" column="0" lean-forward="true" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ft_strcpy.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="30" lean-forward="false" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
           <folding />
         </state>
       </provider>
