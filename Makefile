@@ -22,7 +22,7 @@ SRC = ft_atoi.c ft_lstmap.c ft_putchar_fd.c ft_strdel.c ft_strnequ.c \
 	  ft_memdel.c ft_strcat.c ft_strlen.c ft_strtrim.c ft_itoa.c ft_memmove.c \
 	  ft_strchr.c ft_strmap.c ft_lstadd.c ft_memset.c ft_strclr.c \
 	  ft_strmapi.c ft_tolower.c ft_lstdel.c ft_strcmp.c \
-	  ft_strncat.c ft_toupper.c ft_lstdelone.c \
+	  ft_strncat.c ft_toupper.c ft_lstdelone.c ft_strcount.c \
 	  ft_strncmp.c ft_lstiter.c ft_putchar.c ft_strcpy.c
 
 OBJ = $(SRC:.c=.o)
