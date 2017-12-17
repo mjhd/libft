@@ -38,10 +38,7 @@ int ft_strlink(char *s, struct string *current_str, struct string **mod_pnt, cha
     (*current_str).str = malloc(sizeof(char) * length);
     offset = length;
     while(--length)
-    {
-        printf("%c", *s);
         *(*current_str).str++ = *s++;
-    }
     *(*current_str).str = '\0';
     (*current_str).str = ((*current_str).str - (offset - 1));
     *mod_pnt = (*current_str).next;
@@ -65,7 +62,6 @@ char        **ft_strsplit(char const *s, char c)
         if (*(char *)s++ == c || str_list == current_str)
         {
             offset = ft_strlink((char *)--s, current_str, mod_pnt, c);
-            printf("%d\n", offset);
             s = s + (offset - 1);
         }
     }
