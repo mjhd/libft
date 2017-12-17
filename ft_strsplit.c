@@ -12,13 +12,6 @@
 
 #include "libft.h"
 
-typedef struct string
-{
-    int count;
-    char *str;
-    struct string *next;
-} string;
-
 void ft_str_arr_builder(char **str_arr, struct string *str_list)
 {
     while (*str_arr)
@@ -42,9 +35,7 @@ int ft_strlink(char *s, struct string *current_str, struct string **mod_pnt, cha
     (*current_str).str = malloc(sizeof(char) * length);
     offset = length;
     while(--length)
-    {
         *(*current_str).str++ = *s++;
-    }
     *(*current_str).str = '\0';
     (*current_str).str = ((*current_str).str - (offset - 1));
     *mod_pnt = (*current_str).next;
@@ -73,6 +64,8 @@ char        **ft_strsplit(char const *s, char c)
     }
     str_arr = (char **)malloc(sizeof(char *) * ((*current_str).count + 1));
     str_arr[(*current_str).count] = 0;
+    while((*current_str).count--)
+        str_arr[(*current_str).count] = (char *)current_str;
     free(current_str);
     ft_str_arr_builder(str_arr, str_list);
     return(str_arr);

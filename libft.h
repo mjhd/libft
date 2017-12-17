@@ -41,6 +41,13 @@ typedef struct		inty
 	char 			value;
 } 					inty;
 
+typedef struct		string
+{
+	int				count;
+	char			*str;
+	struct string 	*next;
+} string;
+
 int					get_next_line(const int fd, char **line);
 int					ft_atoi(const char *str);
 void				ft_bzero(void *s, size_t n);
