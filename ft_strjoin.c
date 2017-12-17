@@ -28,3 +28,4 @@ char	*ft_strjoin(const char *s1, const char *s2)
 		str[strlen] = (*(s2 - 1)) ? *(--s2) : *(--s1);
 	return (str);
 }
+//

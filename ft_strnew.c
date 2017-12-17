@@ -20,3 +20,4 @@ char	*ft_strnew(size_t size)
 	str[size] = '\0';
 	return (str);
 }
+//

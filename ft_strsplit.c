@@ -12,53 +12,69 @@
 
 #include "libft.h"
 
-static char	*ft_strsep(char const *s, int len, long i)
+typedef struct string
 {
-	char	*str;
+    int count;
+    char *str;
+    struct string *next;
+} string;
 
-	str = ft_strnew(len);
-	if (str == NULL)
-		return (NULL);
-	str[len--] = '\0';
-	while (len >= 0)
-		str[len--] = s[i--];
-	return (str);
+void ft_str_arr_builder(char **str_arr, struct string *str_list)
+{
+    while (*str_arr)
+    {
+        *str_arr++ = (*str_list).str;
+        str_list = (*str_list).next;
+    }
 }
 
-static char	**ft_strsubsplit(char const *s, char **arr, int arr_len, char c)
+int ft_strlink(char *s, struct string *current_str, struct string **mod_pnt, char delimiter)
 {
-	int		index;
-	int		str_len;
-	long	i;
+    int length;
+    int offset;
 
-	i = 0;
-	index = 0;
-	while (index < arr_len)
-	{
-		str_len = 0;
-		while (s[i] && s[i] == c)
-			i++;
-		while (s[i] && s[i] != c)
-		{
-			i++;
-			str_len++;
-		}
-		if (s[i] == '\0' || s[i] == c)
-			arr[index++] = ft_strsep(s, str_len, i - 1);
-	}
-	arr[index] = NULL;
-	return (arr);
+    length = 0;
+    while (*s++ == delimiter);
+    s--;
+    while (s[length++] != delimiter && s[length - 1]);
+    (*current_str).next = (struct string *)malloc(sizeof(struct string));
+    (*(*current_str).next).count = (*current_str).count + 1;
+    (*current_str).str = malloc(sizeof(char) * length);
+    offset = length;
+    while(--length)
+    {
+        *(*current_str).str++ = *s++;
+    }
+    *(*current_str).str = '\0';
+    (*current_str).str = ((*current_str).str - (offset - 1));
+    *mod_pnt = (*current_str).next;
+    return(offset);
 }
 
-char		**ft_strsplit(char const *s, char c)
+char        **ft_strsplit(char const *s, char c)
 {
-	int		arr_len;
-	char	**arr;
+    char **str_arr;
+    struct string *str_list;
+    struct string *current_str;
+    struct string **mod_pnt;
+    int offset;
 
-	if (s == NULL)
-		return (NULL);
-	arr_len = ft_strcount(s, c);
-	if (!(arr = (char **)malloc(sizeof(char *) * arr_len + 1)))
-		return (NULL);
-	return (ft_strsubsplit(s, arr, arr_len, c));
+    current_str = (struct string *)malloc(sizeof(struct string));
+    (*current_str).count = 0;
+    str_list = current_str;
+    mod_pnt = &current_str;
+    while(s && *(char *)s)
+    {
+        if (*(char *)s++ == c || str_list == current_str)
+        {
+            offset = ft_strlink((char *)--s, current_str, mod_pnt, c);
+            s = s + (offset - 1);
+        }
+    }
+    str_arr = (char **)malloc(sizeof(char *) * ((*current_str).count + 1));
+    str_arr[(*current_str).count] = 0;
+    free(current_str);
+    ft_str_arr_builder(str_arr, str_list);
+    return(str_arr);
 }
+//
