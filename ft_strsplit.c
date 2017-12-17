@@ -32,6 +32,8 @@ int ft_strlink(char *s, struct string *current_str, struct string **mod_pnt, cha
     while (*s++ == delimiter)
         sled++;
     s--;
+    if(!*s)
+        return(sled + 1);
     while (s[length++] != delimiter && s[length - 1]);
     (*current_str).next = (struct string *)malloc(sizeof(struct string));
     (*(*current_str).next).count = (*current_str).count + 1;
