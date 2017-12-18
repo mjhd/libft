@@ -12,6 +12,13 @@
 
 #include "libft.h"
 
+void str_list_freeer(struct string *str_list)
+{
+    if((*str_list).count != -1)
+        str_list_freeer((*str_list).next);
+    free(str_list);
+}
+
 void ft_str_arr_builder(char **str_arr, struct string *str_list)
 {
     while (*str_arr)
@@ -71,8 +78,8 @@ char        **ft_strsplit(char const *s, char c)
     str_arr[(*current_str).count] = 0;
     while((*current_str).count--)
         str_arr[(*current_str).count] = (char *)current_str;
-    free(current_str);
     ft_str_arr_builder(str_arr, str_list);
+    str_list_freeer(str_list);
     return(str_arr);
 }
 //
