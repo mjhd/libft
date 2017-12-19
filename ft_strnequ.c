@@ -12,15 +12,13 @@
 
 #include "libft.h"
 
-int	ft_strnequ(char const *s1, char const *s2, size_t size)
+int            ft_strequ(char const *s1, char const *s2, size_t size)
 {
-	int i;
+	int response;
 
-	i = 0;
-	while (s1[i] != '\0' && s2[i] != '\0' && i++ < (int)size)
-	{
-		if (s1[i - 1] != s2[i - 1])
-			return (0);
-	}
-	return (1);
+	response = 0;
+	while((s1 && s2) && size-- && !response && (*s1 || *s2))
+		response = (*s1) ? (*s1++ - *s2++) : (*s2++ - *s1++);
+	return((!response) ? 1 : 0);
 }
+//
