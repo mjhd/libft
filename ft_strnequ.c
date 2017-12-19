@@ -12,7 +12,7 @@
 
 #include "libft.h"
 
-int            ft_strequ(char const *s1, char const *s2, size_t size)
+int            ft_strnequ(char const *s1, char const *s2, size_t size)
 {
 	int response;
 
