@@ -12,12 +12,12 @@
 
 #include "libft.h"
 
-char	*ft_strnew(size_t size)
+char	*ft_strnew(size_t length)
 {
 	char *str;
 
-	str = (char *)malloc(size + 1);
-	str[size] = '\0';
+	str = (char *)malloc(length + 1);
+	str[length] = '\0';
 	return (str);
 }
 //
