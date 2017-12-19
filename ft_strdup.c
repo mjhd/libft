@@ -14,5 +14,6 @@
 
 char	*ft_strdup(const char *s)
 {
-	return ((s) ? ft_strcpy((char *)malloc(sizeof(char) * ft_strlen(s) + 1), s) : 0);
+	return((s) ? ft_strcpy((char *)malloc(sizeof(char) * ft_strlen(s) + 1), s) : 0);
 }
+//

@@ -10,31 +10,13 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-static int	ft_strlen_eq(char const *s1, char const *s2)
+int            ft_strequ(char const *s1, char const *s2)
 {
-	int 	a;
-	int 	b;
+	int response;
 
-	a = 0;
-	b = 0;
-	while (s1[a] != '\0')
-		a++;
-	while (s2[b] != '\0')
-		b++;
-	return (a == b) ? 1 : 0;
+	response = 0;
+	while((s1 && s2) && !response && (*s1 || *s2))
+		response = (*s1) ? (*s1++ - *s2++) : (*s2++ - *s1++);
+	return((!response) ? 1 : 0);
 }
-
-int			ft_strequ(char const *s1, char const *s2)
-{
-	int		i;
-
-	i = 0;
-	if (!ft_strlen_eq(s1, s2))
-		return (0);
-	while (s1[i++] != '\0')
-	{
-		if (s1[i - 1] != s2[i - 1])
-			return (0);
-	}
-	return (1);
-}
+//
