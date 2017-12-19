@@ -22,7 +22,7 @@ size_t	ft_strlcat(char *s1, const char *s2, size_t length)
 	s1--;
 	while (*s2 && length--)
 		*s1++ = *s2++;
-	*s1 = (*s2 && !++length) ? *s1 : '\0';
+	*s1 = (*s2 && !++length) ? *s2 : '\0';
 	return (final_length);
 }
 //
