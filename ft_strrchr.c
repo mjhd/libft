@@ -19,10 +19,11 @@ char    *ft_strrchr(const char *s, int c)
 	length = 0;
 	while (s && *s && ++length)
 		s = s + 1;
-	while (*s-- != c && length--)
+	while ((*s != c && length--) || (c == '\0'))
 	{
 		if (*s == c)
 			return((char *)s);
+		s--;
 	}
 	return(0);
 }
