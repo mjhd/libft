@@ -17,10 +17,10 @@ char    *ft_strncpy(char *dst, const char *src, size_t length)
 	char *return_pnt;
 
 	return_pnt = dst;
+	length += (ft_strlen(src) > length) ? 1 : 0;
 	while (src && length--)
 		*dst++ = (*(char *)src) ? *(char *)src++ : '\0';
-	if(*(dst - 1))
-		*dst = '\0';
+	*dst = '\0';
 	return (return_pnt);
 }
 //
