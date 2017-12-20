@@ -17,9 +17,9 @@ char    *ft_strncpy(char *dst, const char *src, size_t length)
 	char *return_pnt;
 
 	return_pnt = dst;
-	while (src && *src && --length)
+	while (src && *src)
 		*dst++ = *(char *)src++;
 	*dst = '\0';
 	return (return_pnt);
 }
-//
+// --?
