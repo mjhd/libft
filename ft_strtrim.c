@@ -22,7 +22,7 @@ char    *ft_strtrim(char const *s)
 		s++;
 	while (*s && s[++length]);
 	while (s[--length] == ' ' || s[length] == '\t' || s[length] == '\n');
-	return_str = ft_strncpy(ft_strnew(length), s, (length));
+	return_str = ft_strncpy(ft_strnew(length + 1), s, (length + 1));
 	return (return_str);
 }
 //
