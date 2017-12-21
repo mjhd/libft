@@ -12,7 +12,7 @@
 
 #include "libft.h"
 
-int itoa_assembler(struct inty *pnt, int n, struct inty **mod)
+static int itoa_assembler(struct inty *pnt, int n, struct inty **mod)
 {
     struct inty *tmp;
     int nodes;
