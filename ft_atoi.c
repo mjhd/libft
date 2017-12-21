@@ -18,10 +18,11 @@ int        ft_atoi(const char *s)
 	int multiplier;
 
 	value = 0;
+	multiplier = 1;
 	while(*s && (*s == ' ' || *s == '\n' || *s == '\f' || *s == '\t' || *s == '\v' || *s == '\r'))
 		s++;
 	if (*s == '-' || *s == '+')
-		multiplier = ((*s++) == '-') ? -1 : 1;
+		multiplier *= ((*s++) == '-') ? -1 : 1;
 	while (*s && ft_isdigit(*s))
 	{
 		value *= 10;
