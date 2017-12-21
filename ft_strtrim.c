@@ -12,30 +12,17 @@
 
 #include "libft.h"
 
-char	*ft_strtrim(char const *s)
+char    *ft_strtrim(char const *s)
 {
-	size_t		i;
-	size_t		start;
-	size_t		end;
-	char		*str;
+	char *return_str;
+	int length;
 
-	if (s == NULL)
-		return (NULL);
-	i = 0;
-	while (s[i] && (s[i] == ' ' || s[i] == '\t' || s[i] == '\n'))
-		i++;
-	if (!s[i])
-		return (ft_strnew(0));
-	start = i;
-	while (s[i])
-		i++;
-	i--;
-	while (s[i] == ' ' || s[i] == '\t' || s[i] == '\n')
-		i--;
-	end = i + 1;
-	str = ft_strnew(end - start);
-	if (str == NULL)
-		return (NULL);
-	ft_strncpy(str, &s[start], end - start);
-	return (str);
+	length = 0;
+	while (*s == ' ' || *s == '\t' || *s == '\n')
+		s++;
+	while (*s && s[++length]);
+	while (s[--length] == ' ' || s[length] == '\t' || s[length] == '\n');
+	return_str = ft_strncpy(ft_strnew(length), s, (length));
+	return (return_str);
 }
+//
