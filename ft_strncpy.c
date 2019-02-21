@@ -20,8 +20,9 @@ char    *ft_strncpy(char *dst, const char *src, size_t length)
 	length++;
 	while (src && *src && --length)
 		*dst++ = *src++;
-	while (length--)
+	while (length--){
 		*dst++ = '\0';
+	}
 	return (return_pnt);
 }
 //
